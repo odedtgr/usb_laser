@@ -13,8 +13,15 @@ In order to rebuild the project:
 3. place project folder under C:\microchip\mla\v2018_11_26\apps\usb\device\hid_custom\firmware\usb_laser.X
 4. The rebuild output .hex file can be found in usb_laser.X\dist\PICDEM_FSUSB\production 
 
+## Board schematic
+The board was referanced from https://www.waitingforfriday.com/?p=415#Self-Powered_USB_Devices
+
+![image](https://user-images.githubusercontent.com/22654190/182003204-159ad5cf-de81-443c-8107-c73c41814a5e.png)
+
+
 ## Bootloader
 Bootlader is provided by MikroElectronika
+
 ![image](https://user-images.githubusercontent.com/22654190/182003121-57ccac03-e5a2-4df0-92e1-d9b438b4d895.png)
 
 To upload a new firmware to the microcitroller:
