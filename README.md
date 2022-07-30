@@ -9,6 +9,7 @@ A USB powered and controlled laser diode. The USB interfcae (HID) is implemented
 
 ## Mcrocontroller firmware
 The microcontroller firmware is based on Microchip Libraries for Applications v2018-11-26. 
+
 In order to rebuild the project:
 1. Install MPLAB-X and XC8 compiler
 2. Install Microchip Libraries for Applications v2018-11-26.
