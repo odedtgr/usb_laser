@@ -17,56 +17,48 @@ To request to license the code under the MLA license (www.microchip.com/mla_lice
 please contact mla_licensing@microchip.com
 *******************************************************************************/
 
-#ifndef SYSTEM_H
-#define SYSTEM_H
-
-#include <xc.h>
-#include <stdbool.h>
-#include <stdint.h>
-#include "buttons.h"
-#include "leds.h"
-#include "pwm.h"
-#include "io_mapping.h"
-#include "fixed_address_memory.h"
-
-#define MAIN_RETURN void
-
-/*** System States **************************************************/
-typedef enum
-{
-    SYSTEM_STATE_USB_START,
-    SYSTEM_STATE_USB_SUSPEND,
-    SYSTEM_STATE_USB_RESUME
-} SYSTEM_STATE;
-
 /*********************************************************************
-* Function: void SYSTEM_Initialize( SYSTEM_STATE state )
+* Function: void APP_DeviceCustomHIDInitialize(void);
 *
-* Overview: Initializes the system.
+* Overview: Initializes the Custom HID demo code
 *
 * PreCondition: None
-*
-* Input:  SYSTEM_STATE - the state to initialize the system into
-*
-* Output: None
-*
-********************************************************************/
-void SYSTEM_Initialize( SYSTEM_STATE state );
-
-
-/*********************************************************************
-* Function: void SYSTEM_Tasks(void)
-*
-* Overview: Runs system level tasks that keep the system running
-*
-* PreCondition: System has been initalized with SYSTEM_Initialize()
 *
 * Input: None
 *
 * Output: None
 *
 ********************************************************************/
-//void SYSTEM_Tasks(void);
-#define SYSTEM_Tasks()
+void APP_DeviceCustomHIDInitialize(void);
 
-#endif //SYSTEM_H
+/*********************************************************************
+* Function: void APP_DeviceCustomHIDStart(void);
+*
+* Overview: Starts running the Custom HID demo.
+*
+* PreCondition: The device should be configured into the configuration
+*   that contains the custome HID interface.  The APP_DeviceCustomHIDInitialize()
+*   function should also have been called before calling this function.
+*
+* Input: None
+*
+* Output: None
+*
+********************************************************************/
+void APP_DeviceCustomHIDStart(void);
+
+/*********************************************************************
+* Function: void APP_DeviceCustomHIDTasks(void);
+*
+* Overview: Keeps the Custom HID demo running.
+*
+* PreCondition: The demo should have been initialized and started via
+*   the APP_DeviceCustomHIDInitialize() and APP_DeviceCustomHIDStart() demos
+*   respectively.
+*
+* Input: None
+*
+* Output: None
+*
+********************************************************************/
+void APP_DeviceCustomHIDTasks(void);

@@ -4,26 +4,23 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <logicalFolder name="f2" displayName="bsp" projectFiles="true">
-        <itemPath>../../../../../../bsp/picdem_fs_usb/buttons.h</itemPath>
-        <itemPath>../../../../../../bsp/picdem_fs_usb/leds.h</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f1" displayName="usb" projectFiles="true">
-        <itemPath>../../../../../../framework/usb/inc/usb.h</itemPath>
-        <itemPath>../../../../../../framework/usb/inc/usb_ch9.h</itemPath>
-        <itemPath>../../../../../../framework/usb/inc/usb_common.h</itemPath>
-        <itemPath>../demo_src/usb_config.h</itemPath>
-        <itemPath>../../../../../../framework/usb/inc/usb_device.h</itemPath>
-        <itemPath>../../../../../../framework/usb/src/usb_device_local.h</itemPath>
-        <itemPath>../../../../../../framework/usb/inc/usb_hal.h</itemPath>
-        <itemPath>../../../../../../framework/usb/inc/usb_hal_pic18.h</itemPath>
-        <itemPath>../../../../../../framework/usb/inc/usb_device_hid.h</itemPath>
-      </logicalFolder>
-      <itemPath>../demo_src/app_led_usb_status.h</itemPath>
-      <itemPath>./system.h</itemPath>
-      <itemPath>./fixed_address_memory.h</itemPath>
+      <itemPath>app_device_custom_hid.h</itemPath>
+      <itemPath>app_led_usb_status.h</itemPath>
+      <itemPath>buttons.h</itemPath>
+      <itemPath>fixed_address_memory.h</itemPath>
       <itemPath>io_mapping.h</itemPath>
-      <itemPath>../demo_src/app_device_custom_hid.h</itemPath>
+      <itemPath>leds.h</itemPath>
+      <itemPath>pwm.h</itemPath>
+      <itemPath>system.h</itemPath>
+      <itemPath>usb.h</itemPath>
+      <itemPath>usb_ch9.h</itemPath>
+      <itemPath>usb_common.h</itemPath>
+      <itemPath>usb_config.h</itemPath>
+      <itemPath>usb_device.h</itemPath>
+      <itemPath>usb_device_hid.h</itemPath>
+      <itemPath>usb_device_local.h</itemPath>
+      <itemPath>usb_hal.h</itemPath>
+      <itemPath>usb_hal_pic18.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -32,20 +29,17 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
-        <itemPath>../../../../../../bsp/picdem_fs_usb/buttons.c</itemPath>
-        <itemPath>../../../../../../bsp/picdem_fs_usb/leds.c</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f2" displayName="usb" projectFiles="true">
-        <itemPath>../../../../../../framework/usb/src/usb_device.c</itemPath>
-        <itemPath>../demo_src/usb_descriptors.c</itemPath>
-        <itemPath>../../../../../../framework/usb/src/usb_device_hid.c</itemPath>
-        <itemPath>../demo_src/usb_events.c</itemPath>
-      </logicalFolder>
-      <itemPath>../demo_src/app_led_usb_status.c</itemPath>
-      <itemPath>../demo_src/main.c</itemPath>
+      <itemPath>app_device_custom_hid.c</itemPath>
+      <itemPath>app_led_usb_status.c</itemPath>
+      <itemPath>buttons.c</itemPath>
+      <itemPath>leds.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>pwm.c</itemPath>
       <itemPath>system.c</itemPath>
-      <itemPath>../demo_src/app_device_custom_hid.c</itemPath>
+      <itemPath>usb_descriptors.c</itemPath>
+      <itemPath>usb_device.c</itemPath>
+      <itemPath>usb_device_hid.c</itemPath>
+      <itemPath>usb_events.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -282,6 +276,7 @@
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="hwtoolclock.frcindebug" value="false"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
