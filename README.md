@@ -10,9 +10,7 @@ The microcontroller firmware is based on Microchip Libraries for Applications v2
 
 In order to rebuild the project:
 1. Install MPLAB-X and XC8 compiler
-2. Install Microchip Libraries for Applications v2018-11-26.
-3. place project folder under C:\microchip\mla\v2018_11_26\apps\usb\device\hid_custom\firmware\usb_laser.X
-4. The rebuild output .hex file can be found in usb_laser.X\dist\PICDEM_FSUSB\production 
+2. The rebuild output .hex file can be found in usb_laser.X\dist\PICDEM_FSUSB\production 
 
 ## Board schematic
 The board was referanced from https://www.waitingforfriday.com/?p=415#Self-Powered_USB_Devices
@@ -36,7 +34,7 @@ To upload a new firmware to the microcitroller:
 The host application is based on Microchip Libraries for Applications v2018-11-26, \apps\usb\device\hid_custom\utilities\plug_and_play_example\windows\src
 
 In order to rebuild:
-1. Install Microsoft Visual Studio Express 2012 and C++ redistributable for Visaul Studio 2012 (other versions might work, but 2022 doesnt).
+1. Install Microsoft Visual Studio.
 2. open the "HID PnP Demo.vcxproj" proect file. do not allow Visual Studio to upgrade the project. 
 
 
