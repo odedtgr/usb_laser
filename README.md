@@ -17,6 +17,9 @@ The board was referanced from https://www.waitingforfriday.com/?p=415#Self-Power
 
 ![image](https://user-images.githubusercontent.com/22654190/182003204-159ad5cf-de81-443c-8107-c73c41814a5e.png)
 
+![image](https://user-images.githubusercontent.com/22654190/220583844-5165328c-bcb5-49c6-8082-3fd615de9bde.png)
+
+
 
 ## Bootloader
 Bootlader is provided by MikroElectronika
