@@ -15,9 +15,10 @@ In order to rebuild the project:
 ## Board schematic
 The board was referanced from https://www.waitingforfriday.com/?p=415#Self-Powered_USB_Devices
 
-![image](https://user-images.githubusercontent.com/22654190/182003204-159ad5cf-de81-443c-8107-c73c41814a5e.png)
-
 ![image](https://user-images.githubusercontent.com/22654190/220583844-5165328c-bcb5-49c6-8082-3fd615de9bde.png)
+
+PCB backside:
+![image](https://user-images.githubusercontent.com/22654190/220585205-6dd07dad-8ba6-49e3-97ed-162a6d155cf5.png)
 
 
 
